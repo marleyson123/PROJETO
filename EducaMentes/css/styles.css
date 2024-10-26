@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* Geral */
+   /* Estiliza a barra de navegação */
+   .navbar {
+    display: flex; /* Usa o Flexbox para organizar os itens horizontalmente */
+    justify-content: space-between; /* Espaça os itens nas extremidades esquerda e direita */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 10px 20px; /* Adiciona espaçamento interno em volta da barra */
+    background-color: #333; /* Define a cor de fundo da barra como cinza escuro */
+    color: white; /* Define a cor do texto como branca */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+  }
+
+  /* Nome do sistema, alinhado à esquerda */
+  .navbar .system-name {
+    font-weight: bold; /* Define o nome do sistema com uma fonte em negrito */
+  }
+
+  /* Botão de sair, alinhado à direita */
+  .navbar .logout-button {
+    background-color: #ff4d4d; /* Define a cor de fundo do botão como vermelho */
+    color: white; /* Define a cor do texto do botão como branco */
+    padding: 8px 16px; /* Adiciona espaçamento interno ao redor do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 4px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Define o cursor como uma mãozinha ao passar sobre o botão */
+    text-decoration: none; /* Remove o sublinhado padrão de links */
+  }
+
+  .navbar .logout-button:hover {
+    background-color: #ff6666; /* Altera a cor de fundo ao passar o mouse sobre o botão */
+  }
+
+/* Estilo para a guia lateral */
+.sidebar {
+    height: 100%; /* Altura total */
+    width: 250px; /* Largura da sidebar */
+    position: fixed; /* Fixa a sidebar */
+    left: 0; /* Alinha à esquerda */
+    top: 0; /* Alinha ao topo */
+    background-color: #f8f9fa; /* Cor de fundo da sidebar */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Sombra na sidebar */
+}
+
+/* Estilo para os botões da sidebar */
+.sidebar-btn {
+    display: block; /* Faz os botões ocuparem toda a largura */
+    margin: 10px 0; /* Margem entre os botões */
+    padding: 10px; /* Padding para os botões */
+    text-align: center; /* Centraliza o texto */
+    color: #333; /* Cor do texto */
+    background-color: #e9ecef; /* Cor de fundo dos botões */
+    border-radius: 5px; /* Cantos arredondados */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.sidebar-btn:hover {
+    background-color: #ced4da; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para os formulários */
+.form-section {
+    display: none; /* Esconde os formulários inicialmente */
+}
