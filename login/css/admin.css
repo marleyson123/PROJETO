@@ -1,0 +1,53 @@
+/*Inicio dobra cabeçalho*/
+.main_header{
+    width: 100%;/*tamanho da imagem da tela*/
+   
+    /*position: fixed; ->/*deixa o menu fixo na tela*/
+}
+.main_header_content{
+    max-width: 1300px;/*tamanho do conteudo*/
+    margin: 0 auto;
+    display: flex;
+}
+.img{
+    width: 100%;
+    
+}
+.logo{
+    flex-basis: 330px;/*reserva o tamnaho de px para o item*/
+    padding: 20px;
+    width: 50px; 
+}
+.main_header_content_menu{
+    flex-basis: calc(100% - 330px);/*calc = calcula o tamanho dos px*/
+    display: flex;
+    justify-content:flex-end;/*sever para jogar o menu para o final*/
+}
+.main_header_content_menu ul{
+    display: flex;
+}
+.main_header_content_menu ul li{
+    list-style: none;/*tira o marcador*/
+    display: flex;
+    align-items: center;
+    
+}
+.main_header_content_menu ul li a{
+    padding: 0 26px;
+    display: flex;
+    color: chartreuse;
+    height:70%; /*altura do conteine*/
+    border-radius: 20px;
+    align-items: center;
+}
+.main_header_content_menu ul li a:hover{ /*hover serve para mudar cor do link quando passar o mouse por cima*/
+    color: rgb(30, 30, 29);
+    background-color:chartreuse;
+    
+
+}
+/*fim da dobra cabeçalho*/
+
+
+
+

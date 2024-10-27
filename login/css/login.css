@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    background-color:#FFCF9D;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    background-color:#FFCF9D;
+    
+}
+.logo{
+    
+    width: 30%;
+    /* float:left ; */
+    /* padding: 20px 40px; */
+    box-sizing: border-box;
+   
+    /* background-color: red; */
+   
+
+   
+    
+}
+.formulario{
+    width: 25%;
+    float: right;
+    background-color: rgb(32, 29, 29);
+    color: aliceblue;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    height: 500px;  
+    display: flex;
+    justify-content: center;
+    border-radius: 0 11px 11px 0;
+    
+    
+}
+.formulario input{
+    margin-bottom: 7%;
+}
+.email{
+    width: 120%;
+    
+}
+.senha{
+    width: 120%;
+}
+    
+
+.img{
+
+    /* width: 100%; */
+    height: 500px;
+
+
+    }
+
+    img{
+        border-radius: 11px 0 0 11px;
+    }
+    .formulario h2{
+        color: rgb(41, 145, 214);
+        font-size: 35px;
+        margin-top: 50%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+ 
+    .formulario input{
+        padding: 5px;
+        border-radius: 5px;
+        display: block;
+    }
+    .btn{
+        border: none;
+        margin: 20% auto;
+        border-radius: 5px;
+        padding: 15px ;
+        background-color:  rgb(206, 116, 33);
+        color: aliceblue;
+        width: 60%;
+        height: 7%;
+        cursor: pointer;
+        font-size: 15px;
+        display: block;
+        transition: .3s ease;
+        
+     }
+     .btn:hover{
+        background-color: rgb(41, 145, 214);
+        
+        
+     }
+     .formulario a{
+        text-align:left;
+        color: aliceblue;
+
+     }
+
+@media screen and (max-width: 750px){ /* toda vez que chegar na largura de 458 pixels essa imagem do telefone button do lado nao aparecera mais  */
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        border-radius: 0 0 0 0;
+
+    }
+    .logo{
+        width: 70%;
+        border-radius: 0 0 0 0;
+    }
+    .formulario{
+      width: 70%;
+    }
+}
