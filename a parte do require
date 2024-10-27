@@ -1,0 +1,18 @@
+<?php
+// incluir a conexão com o banco de dados
+require_once '../control/conexao.php';
+
+// Supondo que a sessão do administrador já tenha sido iniciada e você tenha o ID do usuário
+session_start();
+$id_usuario = $_SESSION['id_usuario']; // Supondo que você armazene o ID na sessão
+
+$query = "SELECT * FROM usuarios WHERE id_usuario = ?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("i", $id_usuario);
+$stmt->execute();
+$result = $stmt->get_result();
+$admin = $result->fetch_assoc();
+
+$stmt->close();
+$conn->close();
+?>
