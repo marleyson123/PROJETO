@@ -357,10 +357,28 @@
 
 
         <div id="perfil" class="form-section">
-        <div class="form-content">
-            <h2>Perfil do Administrador</h2>
-            <p>Informações do perfil do administrador serão exibidas aqui.</p>
-        </div>
+    <div class="form-content">
+        <h2>Perfil do Administrador</h2>
+        <form action="../control/alterarPerfilControl.php" method="POST">
+            <input type="hidden" name="id_usuario" value="<?php echo $admin['id_usuario']; ?>"> <!-- Supondo que você tenha a ID do usuário -->
+            
+            <label for="nome-admin">Nome:</label>
+            <input type="text" id="nome-admin" name="nome" value="<?php echo $admin['nome']; ?>" required>
+            <br><br>
+            
+            <label for="email-admin">Email:</label>
+            <input type="email" id="email-admin" name="email" value="<?php echo $admin['email']; ?>" required>
+            <br><br>
+            
+            <label for="cpf-admin">CPF:</label>
+            <input type="text" id="cpf-admin" name="cpf" value="<?php echo $admin['cpf']; ?>" required>
+            <br><br>
+            
+            <input type="submit" value="Alterar Informações">
+        </form>
+    </div>
+</div>
+
     
 
     <!-- Script para alternar entre seções -->
